@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@layer components {
+  .wrapper {
+    @apply sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl py-4 px-6  mx-auto;
+  }
+
+  *::selection {
+    background-color: black;
+    color: silver;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #000a1d;
+    color: white;
+  }
+
+  .mainBgColor {
+    background-color: #000a1d;
+  }
+
+  .textStroke {
+    -webkit-text-stroke: 1px #efefef;
+    color: transparent;
+    opacity: 0.3;
+    letter-spacing: -6px;
+    font-size: 8.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0.8;
+    z-index: -1;
+  }
+
+  .gradient-border {
+    border-width: 3px;
+    border-image: linear-gradient(to right, #186EF2, #6D18EF);
+    border-image-slice: 1;
+  }
+}
+@media (min-width: 640px) {
+    .sm\:max-w-\[80px\] {
+        display: none;}}
+
+        h3.font-bold.font-mono.max-w-xl.text-2xl.tracking-wider.leading-none.sm\:text-4xl {
+    margin-top: 84px;
+}
+@media (min-width: 640px) {
+    .sm\:text-\[7rem\] {
+        color: white;
+        font-size: 7rem;
+    }
+}
+h3.font-bold.font-mono.max-w-2xl.sm\:text-4xl.text-center.text-2xl.tracking-wider.leading-none {
+    margin-top: 71px;
+}
+h3.font-bold.font-mono.sm\:text-4xl.text-2xl.tracking-wider {
+    margin-top: 86px;
+}
+@media (min-width: 640px) {
+    .sm\:text-\[8\.5rem\] {
+        font-size: 8.5rem;
+        color: white;
+    }
+}
