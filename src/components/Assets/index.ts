@@ -1,0 +1,32 @@
+export const projectImages = {
+  Logo: require("./Images/Logo.png"),
+  Logo1: require("./Images/logo1.png"),
+  // Logo2: require("./Images/Logo2.png"),
+  Logo3: require("./Images/logo3.png"),
+  Logo4: require("./Images/logo4.png"),
+  Bulb: require("./Images/Bulb.png"),
+  Hero: require("./Images/Hero-Guy.png"),
+  PinkBall: require("./Images/Prop-Ball.png"),
+  Clouds: require("./Images/Cloud-BG.png"),
+  Wave: require("./Images/BgWave.png"),
+  Section2Hero: require("./Images/Section2-Guy.png"),
+  PseudoElement: require("./Images/pseudo.png"),
+  FeatureImage1: require("./Images/feature-1.png.png"),
+  FeatureImage2: require("./Images/feature-2.png.png"),
+  FeatureImage3: require("./Images/feature-3.png.png"),
+  FeatureImage4: require("./Images/feature-4.png.png"),
+  WhoSectionMain: require("./Images/Section3-Main.png"),
+  WhoSectionCheck: require("./Images/Section3-Check.png"),
+  SeoSectionMain: require("./Images/Section4-Main.png"),
+  ContactSectionMain: require("./Images/Contact-Main.png"),
+  Slider1Pic: require("./Images/sliderpic1.png"),
+  Project1: require("./Images/project-1.png"),
+  Project2: require("./Images/project-2.png"),
+  Project3: require("./Images/project-3.png"),
+  Project4: require("./Images/project-4.png"),
+  Project5: require("./Images/project-5.png"),
+  Project6: require("./Images/project-6.png"),
+};
+
+
+
