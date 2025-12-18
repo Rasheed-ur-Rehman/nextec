@@ -47,7 +47,7 @@ const Footer = () => {
       <div className="wrapper flex lg:justify-around gap-16 flex-wrap">
         {/* Logo + Social Icons */}
         <div className="space-y-6">
-          <Image src="/Logo3.png" alt="Logo" width={150} height={50} className="w-[150px]" />
+          <Image src="/_next/static/media/logo3.158d5f9c.png" alt="Logo" width={150} height={50} className="w-[150px]" />
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Follow Us</h3>
             <div className="flex gap-3 items-center">
