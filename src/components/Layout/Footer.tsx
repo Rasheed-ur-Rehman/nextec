@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { projectImages } from "../Assets";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -43,11 +42,18 @@ const Footer = () => {
   ];
 
   return (
-<section className="mainBgColor py-10 sm:py-8">
+    <section className="mainBgColor py-10 sm:py-8">
       <div className="wrapper flex lg:justify-around gap-16 flex-wrap">
         {/* Logo + Social Icons */}
         <div className="space-y-6">
-          <Image src="/_next/static/media/logo3.158d5f9c.png" alt="Logo" width={150} height={50} className="w-[150px]" />
+          {/* ✅ Updated logo URL */}
+          <Image
+            src="/logo3.png"
+            alt="Nextec Logo"
+            width={150}
+            height={50}
+            className="w-[150px]"
+          />
           <div className="space-y-4">
             <h3 className="text-xl font-semibold">Follow Us</h3>
             <div className="flex gap-3 items-center">
@@ -82,10 +88,8 @@ const Footer = () => {
         {/* Contact Section */}
         <div className="space-y-5 max-w-[350px]">
           <h3 className="text-xl font-semibold tracking-wider">Contact:</h3>
-
           <div className="space-y-3 text-stone-300">
             <p className="text-base font-medium">🌍 Global Presence</p>
-
             <div className="space-y-2">
               <p>🇺🇸 <strong>USA (Head Office)</strong></p>
               <p className="text-sm">Kearny, NJ, USA</p>
@@ -96,7 +100,6 @@ const Footer = () => {
                 📞 +1 551 407 4732
               </Link>
             </div>
-
             <div className="space-y-2 mt-3">
               <p>🇬🇧 <strong>United Kingdom (Branch)</strong></p>
               <p className="text-sm">
@@ -109,10 +112,9 @@ const Footer = () => {
                 📞 +44 7488 930858
               </Link>
             </div>
-
             <div className="mt-3">
               <Link
-                href="mailto:sales@nextec.live"
+                href="mailto:servicesnextec@gmail.com"
                 className="block text-sm text-blue-400 hover:underline"
               >
                 📧 servicesnextec@gmail.com
@@ -122,9 +124,16 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Optional Bottom Line */}
-      <div className="text-center mt-10 text-sm text-stone-400 border-t border-stone-700 pt-4">
-        © {new Date().getFullYear()} Nextec. All rights reserved.
+      {/* ✅ Bottom Bar with Privacy Policy link */}
+      <div className="text-center mt-10 text-sm text-stone-400 border-t border-stone-700 pt-4 flex flex-col sm:flex-row justify-center items-center gap-3">
+        <span>© {new Date().getFullYear()} Nextec. All rights reserved.</span>
+        <span className="hidden sm:inline text-stone-600">|</span>
+        <Link
+          href="/privacy-policy"
+          className="text-stone-400 hover:text-white transition duration-300"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </section>
   );
